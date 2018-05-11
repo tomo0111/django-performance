@@ -9,5 +9,5 @@ $ docker build -t django-performance:latest .
 
 Docker run container
 ```
-$ docker run -p 8000:8000 django-performance
+$ docker run -p 80:8000 django-performance
 ```
