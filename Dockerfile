@@ -12,7 +12,8 @@ WORKDIR /opt/django-performance
 
 ADD requirements.txt /opt/django-performance
 
-RUN pip install -r requirements.txt
+RUN pip install --upgrade pip &&  \
+    pip install -r requirements.txt
 
 ADD . /opt/django-performance/
 
